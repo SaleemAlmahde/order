@@ -1,10 +1,9 @@
 import React from 'react';
+import WebsiteLayout from '../layouts/WebsiteLayout';
 
 const OrderPage = () => {
     return (
-        <div>
-            
-        </div>
+        <WebsiteLayout></WebsiteLayout>
     );
 }
 

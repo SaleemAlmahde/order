@@ -1,6 +1,9 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './assets/css/style.css'
 import CategoryPage from "./pages/website/CategoryPage";
+import ProductPage from './pages/website/ProductPage';
+import CartPage from './pages/website/CartPage';
+import OrderPage from './pages/website/OrderPage';
 
 
 function App() {
@@ -8,11 +11,9 @@ function App() {
     <Router>
           <Routes>
             <Route index element={<CategoryPage />} />
-            {/* <Route path="/products" element={<ProductsPage />} />
-            <Route path="/add" element={<AddProduct />} />
+            <Route path="/products" element={<ProductPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/page" element={<Page />} />
-            <Route path="/admin" element={<DashboardHomePage />} /> */}
+            <Route path="/order" element={<OrderPage />} />
           </Routes>
         </Router>
   );
